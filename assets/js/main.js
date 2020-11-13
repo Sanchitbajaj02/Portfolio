@@ -9,3 +9,23 @@ window.onscroll = () => {
     navcolor.classList.remove("active");
   }
 };
+
+// Navbar collapse on clicking the navItem
+
+let navToggle = document.querySelector(".navbar-toggler");
+let x = document.getElementById("collpase").getAttribute("aria-expanded");
+let collap = document.querySelector(".navbar-collapse");
+
+function collapse() {
+  navToggle.classList.add("collapsed");
+  if (x == "true") {
+    x = "false";
+  } else {
+    x = "true";
+  }
+  document.getElementById("collpase").setAttribute("aria-expanded", x);
+
+  collap.classList.remove("show");
+}
+
+// Scroll Back to Top Button

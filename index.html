@@ -8,7 +8,13 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+  <!-- Font Awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  <!-- Bootstrap Social -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-social.css">
+
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Sanchit Bajaj | Portfolio</title>
 
@@ -18,7 +24,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg nav-transparent fixed-top">
     <div class="container">
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" id="collpase"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars fa-lg" style="color: #08fdd8;"></i>
       </button>
@@ -28,19 +34,19 @@
             <a class="nav-link active" href="#home"><i class="fa fa-home"></i> Home</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#about"><i class="fa fa-info-circle"></i> About</a>
+            <a class="nav-link active" href="#about" onclick="collapse();"><i class="fa fa-info-circle"></i> About</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#skill"><i class="fa fa-list"></i> Skills</a>
+            <a class="nav-link active" href="#skill" onclick="collapse();"><i class="fa fa-list"></i> Skills</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#project"><i class="fa fa-code"></i> Project</a>
+            <a class="nav-link active" href="#project" onclick="collapse();"><i class="fa fa-code"></i> Project</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#test"><i class="fa fa-comment"></i> Testimonials</a>
+            <a class="nav-link active" href="#test" onclick="collapse();"><i class="fa fa-comment"></i> Testimonials</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#contact"><i class="fa fa-id-card"></i> Contact</a>
+            <a class="nav-link active" href="#contact" onclick="collapse();"><i class="fa fa-id-card"></i> Contact</a>
           </li>
         </ul>
       </div>
@@ -83,7 +89,7 @@
 
   <!-- skills -->
   <div class="some-space" id="skill"></div>
-  <section class="section pb-4">
+  <section class="section">
     <div class="container">
       <h1 class="heading">My Skills</h1>
       <div class="row" style="margin-top: 2rem;">
@@ -172,11 +178,72 @@
   <!-- testimonials -->
 
 
+  <!-- Progress Wrap -->
+
   <!-- footer -->
   <div class="some-space" id="contact"></div>
   <footer>
-    <div class="container">
+    <div class="container p-4">
+      <div class="row">
 
+        <div class="col-12 col-md-6 my-3">
+          <h4 class="heading">Connect with me</h3>
+            <hr />
+            <div class="black-box mx-auto">
+              <form>
+                <input type="text" id="name" placeholder="Enter your name" /><br />
+                <input type="email" id="email" placeholder="Enter your email" /><br />
+                <textarea id="message" cols="20" rows="5" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 my-3">
+          <h4 class="heading">My Socials</h3>
+            <hr>
+            <div class="black-box mx-auto">
+              <a href="tel:8743811303" role="button" class="my-1 text-decoration-none text-white d-block">
+                <button class="btn btn-social-icon btn-success btn-lg badge">
+                  <i class="fa fa-phone"></i>
+                </button>
+                <span class="btn-text">+91 8743811303</span>
+              </a>
+
+              <a href="mailto:sanchit02@outlook.com" target="_blank"
+                class="my-1 text-decoration-none text-white d-block" role="button">
+                <button class="btn btn-social-icon btn-google btn-lg badge">
+                  <i class="fa fa-envelope"></i>
+                </button>
+                <span class="btn-text">sanchit02@outlook.com</span>
+              </a>
+
+              <a href="https://www.instagram.com/sbajaj_02/" target="_blank"
+                class="my-1 text-decoration-none text-white d-block" role="button">
+                <button class="btn btn-social-icon btn-foursquare btn-lg badge">
+                  <i class="fab fa-instagram"></i>
+                </button>
+                <span class="btn-text">sbajaj_02</span>
+              </a>
+
+              <a href="https://github.com/sanchitbajaj02/" target="_blank"
+                class="my-1 text-decoration-none text-white d-block" role="button">
+                <button class="btn btn-social-icon btn-github btn-lg badge">
+                  <i class="fab fa-github"></i>
+                </button>
+                <span class="btn-text">sanchitbajaj02</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/sanchit-bajaj-123826194/" target="_blank"
+                class="my-1 text-decoration-none text-white d-block" role="button">
+                <button class="btn btn-social-icon btn-linkedin btn-lg badge">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+                <span class="btn-text">Sanchit Bajaj</span>
+              </a>
+
+            </div>
+        </div>
+      </div>
     </div>
 
     <div id="copyright" class="Sticky-bottom">

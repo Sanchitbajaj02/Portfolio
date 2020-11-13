@@ -29,12 +29,8 @@ body {
 }
 
 .section {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 80vh;
-  padding: 5rem 0 0 0;
-  margin: 1rem 0 0 0;
+  padding: 1rem 0 0 0;
+  margin: 8rem 0 0 0;
   position: relative;
 }
 
@@ -63,7 +59,7 @@ body {
 }
 
 .nav-transparent.active a {
-  color: #08fdd8;
+  color: var(--textHead1);
 }
 
 .nav-item {
@@ -125,11 +121,11 @@ figure {
 }
 
 figure:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 figure img:hover {
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 
 figure img {
@@ -154,9 +150,51 @@ figure img {
 /* ----Skill css end---- */
 
 /* ----Footer css start---- */
+footer {
+  margin: 8rem 0 0 0;
+  background-color: var(--bgColor);
+  width: 100%;
+  color: #fff;
+}
+
+.badge {
+  border-radius: 50%;
+  margin: 0 0.8rem;
+}
+
+.btn-text {
+  font-size: 1.1rem;
+  vertical-align: 1rem;
+}
+
+.black-box {
+  background-color: rgba(51, 51, 51, 0.8);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: var(--textHead1);
+  padding: 8px 10px;
+}
 
 #copyright {
-  background-color: var(--bgColor);
+  background-color: #08101b;
   height: 5vh;
   width: 100%;
   z-index: 1000;
@@ -171,13 +209,12 @@ figure img {
 }
 /* ----Footer css end---- */
 
+/* ----progress wrap css start---- */
+
+/* ----progress wrap css end---- */
+
 /* media queries */
 @media (max-width: 576px) {
-  .section {
-    height: 110vh;
-    /* margin-bottom: 2rem; */
-  }
-
   .some-space {
     margin-top: 3rem;
   }
@@ -186,8 +223,17 @@ figure img {
     border-radius: none;
     margin: 2rem;
   }
+
   figure img {
     border: 10px solid #fff;
+  }
+
+  .badge {
+    margin: 0;
+  }
+  
+  .btn-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -196,12 +242,13 @@ figure img {
     background: var(--bgColor);
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
   }
-  .heading {
-    font-size: 2.5rem;
+
+  .nav-transparent a {
+    color: #08fdd8;
   }
 
-  .section {
-    /* margin-top: 8rem; */
+  .heading {
+    font-size: 2.5rem;
   }
 
   .banner-text {
