@@ -1,23 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
   <!-- Font Awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
   <!-- Bootstrap Social -->
-  <link rel="stylesheet" href="./assets/css/bootstrap-social.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap-social.css" />
 
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
   <title>Sanchit Bajaj | Portfolio</title>
-
 </head>
 
 <body>
@@ -26,27 +25,27 @@
     <div class="container">
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" id="collpase"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars fa-lg" style="color: #08fdd8;"></i>
+        <i class="fa fa-bars fa-lg" style="color: #f8e3a2"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#home"><i class="fa fa-home"></i> Home</a>
+            <a class="nav-link active" href="/"><i class="fa fa-home"></i> Home</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#about" onclick="collapse();"><i class="fa fa-info-circle"></i> About</a>
+            <a class="nav-link active" href="./index.html#about" onclick="collapse();"><i class="fa fa-info-circle"></i> About</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#skill" onclick="collapse();"><i class="fa fa-list"></i> Skills</a>
+            <a class="nav-link active" href="./index.html#skill" onclick="collapse();"><i class="fa fa-list"></i> Skills</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#project" onclick="collapse();"><i class="fa fa-code"></i> Project</a>
+            <a class="nav-link active" href="./index.html#project" onclick="collapse();"><i class="fa fa-code"></i> Project</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#test" onclick="collapse();"><i class="fa fa-comment"></i> Testimonials</a>
+            <a class="nav-link active" href="./index.html#test" onclick="collapse();"><i class="fa fa-comment"></i> Testimonials</a>
           </li>
           <li class="nav-item px-2 py-1">
-            <a class="nav-link active" href="#contact" onclick="collapse();"><i class="fa fa-id-card"></i> Contact</a>
+            <a class="nav-link active" href="./contact.html"><i class="fa fa-id-card"></i> Contact</a>
           </li>
         </ul>
       </div>
@@ -58,7 +57,7 @@
     <div class="banner"></div>
     <div class="banner-text">
       <h1>I am Sanchit Bajaj</h1>
-      <h3>And I'm a Web Developer</h3>
+      <h4>And I'm a Web Developer</h4>
     </div>
   </section>
 
@@ -66,21 +65,22 @@
   <div class="some-space" id="about"></div>
   <section class="section">
     <div class="container">
-      <h1 class="heading">About Me</h1>
+      <h4 class="heading">About Me</h4>
       <div class="row">
         <div class="col-12 col-sm-8">
           <div class="about-text">
             <p>
-              I'm a full-stack web developer, born in Delhi, India. I'm currently pursuing B.TECH in Computer Science
-              and
-              Technology from Manav Rachna University.<br>
-              I design and craft products and enhance visual experience based on a deep understanding of customer needs.
+              I'm a full-stack web developer, born in Delhi, India. I'm
+              currently pursuing B.TECH in Computer Science and Technology
+              from Manav Rachna University.<br />
+              I design and craft products and enhance visual experience based
+              on a deep understanding of customer needs.
             </p>
           </div>
         </div>
         <div class="col-12 col-sm-4">
           <figure>
-            <img src="./assets/img/portfolio.jpg" alt="my image">
+            <img src="./assets/img/portfolio.jpg" alt="my image" />
           </figure>
         </div>
       </div>
@@ -91,8 +91,8 @@
   <div class="some-space" id="skill"></div>
   <section class="section">
     <div class="container">
-      <h1 class="heading">My Skills</h1>
-      <div class="row" style="margin-top: 2rem;">
+      <h4 class="heading">My Skills</h4>
+      <div class="row" style="margin-top: 2rem">
         <div class="col-12 col-sm-6">
           <div class="py-3">
             <label>HTML</label>
@@ -174,80 +174,93 @@
   </section>
 
   <!-- projects -->
+  <div class="some-space" id="project"></div>
+  <section class="section">
+    <div class="container">
+      <h4 class="heading">My Projects</h4>
+      <div class="row">
+        <div class="col-12 col-sm-4 px-3 my-2">
+          <div class="card">
+            <img src="./assets/img/project1.png" class="card-img-top img-fluid" />
+            <div class="card-body info">
+              <h5 class="card-title">Delish Homemade</h5>
+              <a href="#!" class="btn">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 px-3 my-2">
+          <div class="card">
+            <img src="./assets/img/project2.png" class="card-img-top" />
+            <div class="card-body info">
+              <h5 class="card-title">ciais2021.com</h5>
+              <a href="#!" class="btn">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 px-3 my-2">
+          <div class="card">
+            <img src="./assets/img/project3.png" class="card-img-top" />
+            <div class="card-body info">
+              <h5 class="card-title">Portfolio</h5>
+              <a href="#!" class="btn">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- testimonials -->
-
+  <div class="some-space" id="test"></div>
+  <section class="section">
+    <div class="test-bg-img">
+      <div class="test-bg-color">
+        <h4 class="pt-3 heading text-light">Testimonials</h4>
+      </div>
+    </div>
+  </section>
 
   <!-- Progress Wrap -->
 
   <!-- footer -->
-  <div class="some-space" id="contact"></div>
   <footer>
-    <div class="container p-4">
-      <div class="row">
-
-        <div class="col-12 col-md-6 my-3">
-          <h4 class="heading">Connect with me</h3>
-            <hr />
-            <div class="black-box mx-auto">
-              <form>
-                <input type="text" id="name" placeholder="Enter your name" /><br />
-                <input type="email" id="email" placeholder="Enter your email" /><br />
-                <textarea id="message" cols="20" rows="5" placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 my-3">
-          <h4 class="heading">My Socials</h3>
-            <hr>
-            <div class="black-box mx-auto">
-              <a href="tel:8743811303" role="button" class="my-1 text-decoration-none text-white d-block">
-                <button class="btn btn-social-icon btn-success btn-lg badge">
-                  <i class="fa fa-phone"></i>
-                </button>
-                <span class="btn-text">+91 8743811303</span>
-              </a>
-
-              <a href="mailto:sanchit02@outlook.com" target="_blank"
-                class="my-1 text-decoration-none text-white d-block" role="button">
-                <button class="btn btn-social-icon btn-google btn-lg badge">
-                  <i class="fa fa-envelope"></i>
-                </button>
-                <span class="btn-text">sanchit02@outlook.com</span>
-              </a>
-
-              <a href="https://www.instagram.com/sbajaj_02/" target="_blank"
-                class="my-1 text-decoration-none text-white d-block" role="button">
-                <button class="btn btn-social-icon btn-foursquare btn-lg badge">
-                  <i class="fab fa-instagram"></i>
-                </button>
-                <span class="btn-text">sbajaj_02</span>
-              </a>
-
-              <a href="https://github.com/sanchitbajaj02/" target="_blank"
-                class="my-1 text-decoration-none text-white d-block" role="button">
-                <button class="btn btn-social-icon btn-github btn-lg badge">
-                  <i class="fab fa-github"></i>
-                </button>
-                <span class="btn-text">sanchitbajaj02</span>
-              </a>
-
-              <a href="https://www.linkedin.com/in/sanchit-bajaj-123826194/" target="_blank"
-                class="my-1 text-decoration-none text-white d-block" role="button">
-                <button class="btn btn-social-icon btn-linkedin btn-lg badge">
-                  <i class="fab fa-linkedin"></i>
-                </button>
-                <span class="btn-text">Sanchit Bajaj</span>
-              </a>
-
-            </div>
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 text-center my-3">
+            <a href="https://twitter.com/sanchitbajaj02" target="_blank" class="btn p-0">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/sbajaj_02/" target="_blank" class="btn p-0">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://github.com/sanchitbajaj02/" target="_blank" class="btn p-0">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/sanchit-bajaj-123826194/" target="_blank" class="btn p-0">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 text-center my-3">
+            <p>CopyRight &copy; 2020 | Portfolio</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="copyright" class="Sticky-bottom">
-      <p>CopyRight &copy; 2020 | Portfolio</p>
     </div>
   </footer>
 
