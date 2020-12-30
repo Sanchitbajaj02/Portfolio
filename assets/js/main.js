@@ -1,14 +1,14 @@
 const navcolor = document.querySelector(".nav-transparent");
 
-window.onscroll = () => {
-  var top = window.scrollY;
-  console.log(top);
-  if (top >= 100) {
-    navcolor.classList.add("active");
-  } else {
-    navcolor.classList.remove("active");
-  }
-};
+// window.onscroll = () => {
+//   var top = window.scrollY;
+//   console.log(top);
+//   if (top >= 100) {
+//     navcolor.classList.add("active");
+//   } else {
+//     navcolor.classList.remove("active");
+//   }
+// };
 
 // Navbar collapse on clicking the navItem
 
@@ -28,4 +28,13 @@ function collapse() {
   collap.classList.remove("show");
 }
 
-// Scroll Back to Top Button
+// Owl Carousel
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    nav: true,
+    autoplayTimeout:5000  
+  });
+});
